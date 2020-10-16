@@ -34,10 +34,9 @@ RUN apt-get install php7.3-fpm -y
 
 #Starting the docker
 
-COPY srcs/tmp
+COPY srcs /tmp
 COPY srcs/start.sh ./
 RUN mkdir -p /var/www/ft_server
-
 # the SSL certificate
 #openssl: This is the basic command line tool for creating and managing OpenSSL certificates, keys, and other files.
 
