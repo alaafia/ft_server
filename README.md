@@ -7,8 +7,9 @@ the "docker" technology and use it to install a complete web server. This server
 multiples services: Wordpress, phpMyAdmin, and a SQL database.
 
 PS1 - instruction to use Docker
-    To Build The Server : docker build -t ft_server . 
+    To Build The Server : 
     
+    docker build -t ft_server . 
     To Run The Server : docker run -it -p 80:80 -p 443:443 --name ft_server ft_server
     To Stop The Server : docker stop ft_server
     To Open The Terminal of the Container : docker exec -it ft_server bash           
