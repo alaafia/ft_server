@@ -6,6 +6,19 @@ of the importance of using scripts to automate your tasks. For that, you will di
 the "docker" technology and use it to install a complete web server. This server will run
 multiples services: Wordpress, phpMyAdmin, and a SQL database.
 
+
+            the latest version of Docker has some issues with Mojave, so here’s how you can use Docker without having to use the one in the MSC.
+            Install Virtualbox from MSC.
+            Install brew.
+            Move your brew directory to goinfre then symlink it.
+            Install docker and docker-machine using brew.
+            brew install docker and brew install docker-machine
+            Create a new machine and specify the driver:
+            docker-machine create --driver virtualbox default
+            Run:
+            docker-machine env default then eval $(docker-machine env default)
+            Test with a docker run -it debian or something to make sure it works.
+            
 PS1 - instruction to use Docker
 
 
